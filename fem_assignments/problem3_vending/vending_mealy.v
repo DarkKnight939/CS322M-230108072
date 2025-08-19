@@ -51,7 +51,7 @@ module vending_mealy(
             end
         endcase
     end
-    
+
     assign item_out = ( (st_cur == S_10  && coin_in == 2'b10) || 
                         (st_cur == S_15 && coin_in == 2'b01) || 
                         (st_cur == S_15 && coin_in == 2'b10) );
